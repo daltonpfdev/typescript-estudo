@@ -1,0 +1,77 @@
+- O que é a "Linguagem de Programação" TypeScript?
+
+As aspas em "Linguagem de Programação" não é atoa, pois, na teoria o TypeScript é basicamente JavaScript com uma cara um pouco diferente. Sim, TypeScript é JavaScript, mas suas diferenças são bem marcantes para o desenvolvimento de uma aplicação que hoje em dia, consideramos TypeScript como uma linguagem de programação independente.
+
+A criação do TypeScript se decorreu pela difícil desorganização em aplicações feitas com o JavaScript, que é uma linguagem fracamente tipada. Ou seja, nada é informada para que cada função ou variável serve para cada canto da aplicação, tornando o desenvolvimento de um grande time uma verdadeira zona. A linguagem TypeScript foi criada em 2012 pela Microsoft por esbarrar nesses problemas de inconsistências perante a linguagem JavaScript. Com isso, o TypeScript é a base do Node.js, que um software para criação de aplicativos JavaScript, utilizando o V8, o mesmo motor de interpretação do Javacript nos navegadores.
+
+Sem dúvidas, desenvolver com TypeScript torna sua aplicação mais estruturada e tipada, com a linguagem literalmente se forçando a aplicar boas práticas no desenvolvimento de software.
+
+
+- Por que aprender TypeScript se basicamente JavaScript?
+
+Pensando atualmente, o aprendizado de TypeScript é imprescindível na crescimento profissional no desenvolvedor. As grandes empresas estão atrás de programadores TypeScript e não somente programadores JavaScript, pois suas aplicações backend, por exemplo, estão sendo em Node.js para a construção de APIs. Aprender JavaCript é importante, é nela de são feitas as interações de aplicações frontend, mas a tecnologia TypeScript é com certeza um belo diferencial.
+
+
+- Como começar o aprendizado do TypeScript?
+
+Primeiramente, a melhor forma para o aprendizado do TypeScript é no software Node.js. Aqui vai um guia para instalação do Node.js e o TypeScript:
+
+. Primeiramente, abra esse site: https://nodejs.org/pt/download/package-manager e escolha a configuração que ajuste ao seu caso de Sistema Operacional. É importante saber que, em qualquer dos casos, sempre escolha uma versão de Node.js (LST), que é uma versão com um longo tempo de suporte da empresa para o com o software. Vou dar o exemplo de instalação para uma máquina Linux (que pode ser reaproveitada com o WSL no seu sistema Windows 10/11):
+
+. Node.js versão v20.15.1 (LTS) no Linux usando o NVM
+
+# Instalação do nvm (Node Version Manager), um versionador de versões do Node.js
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Download e Instalação do Node.js (Pode ser necessário reiniciar o terminal)
+$ nvm install 20
+
+# Verificar a versão do Node.js instalada
+$ node -v 
+
+# Verificar a versão do NPM (gerenciador de pacotes do Node.js)
+$ npm -v
+
+. Agora, com as versões do node.js e do npm, crie uma pasta na sua máquina no local que desejar, entre nela e abra o terminal nesse caminho. No terminal da pasta, aplicar o comando:
+
+# Baixa o TypeScript para a versão mais atual
+$ npm i -g typescript
+
+# Verifica a versão do compilador de TypeScript para JavaScript baixada.
+$ tsc -v
+
+. Com o TypeScript baixado, agora abra sua pasta com o editor de texto de sua preferência e novamente no terminal, insira o comando:
+
+# Comando como gerar um arquivo tsconfig.json
+$ tsc --init
+
+. O arquivo gerado após o comando é chamado de "tsconfig.json", que é um arquivo de configuração do TypeScript essencial para um projeto TypeScript. Esse é um arquivo que pode haver diversas configurações do projeto e ele vem com bastante coisa comentada como possibilidades de configuração. Alguns dos campos essências são:
+
+# "target": Responsável por gerenciar a versão do JavaScript após a compilação
+# "module": Responsável por gerenciar os módulos do código
+# "rootDir": Lugar onde ficaram os arquivos .ts (TypeScript) do projeto
+# "outDir": Lugar onde ficaram os arquivos .js (JavaScript) do projeto
+
+. Um projeto TypeScript tem uma convenção na locação de pastas e arquivos do projeto, onde arquivos .ts e .js são separados. No geral, arquivos .ts (TypeScript) ficam em uma pasta chamada: "src" e os arquivos .js(JavaScript) ficam em uma pasta chamada: "dist". Veja um exemplo de arquivos em um projeto TypeScript:
+
+dist
+  index.js
+src
+  index.ts
+tsconfig.json
+
+. É bom enfatizar que, em um projeto TypeScript geralmente não se cria arquivos .js, mas sim geramos ele a partir de um arquivo .ts com o compilador de TypeScript (tsc). Para essa geração ser feita corretamente, os campos de tsconfig.json tem que estar corretos, siga o passo a passo:
+
+# Em tsconfig.json, configurar os campos:
+# "rootDir": ./src
+# "outDir": ./dist
+
+# Agora, com um arquivo .ts na pasta src aplique o comando no terminal da raiz do seu projeto:
+$ tsc
+
+# Após o comando tsc, um equivalente será gerado em dist com a extensão .js. Esse arquivo gerado é execultavel.
+
+. Pronto, agora você entendeu como configurar e iniciar seu primeiro projeto em TypeScript.
+
+
+
