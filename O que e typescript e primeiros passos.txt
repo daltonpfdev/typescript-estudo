@@ -77,4 +77,8 @@ Estou disponibilizando uma pasta nesse repositório com o básico da sintaxe do 
 Caso você queira esses documentos para testar na sua máquina, faça um clone desse repositório com:
 $ git clone https://github.com/daltonpfdev/typescript-estudo.git
 
+Fonte base para este documento de da pasta com a sintaxe do TypeScript:
+https://www.youtube.com/watch?v=ppDsxbUNtNQ
+Curso de TypeScript para Completos Iniciantes -> Felipe Rocha - dicasparadevs -> 1 hora 22 minutos e 38 segundos
+
 Atenciosamente, daltonpfdev.
