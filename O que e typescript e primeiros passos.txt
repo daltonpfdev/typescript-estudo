@@ -73,5 +73,8 @@ $ tsc
 
 . Pronto, agora você entendeu como configurar e iniciar seu primeiro projeto em TypeScript.
 
+Estou disponibilizando uma pasta nesse repositório com o básico da sintaxe do TypeScript com o nome de sintaxe-typescript
+Caso você queira esses documentos para testar na sua máquina, faça um clone desse repositório com:
+$ git clone https://github.com/daltonpfdev/typescript-estudo.git
 
-
+Atenciosamente, daltonpfdev.
