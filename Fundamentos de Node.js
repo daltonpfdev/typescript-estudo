@@ -65,7 +65,12 @@ $ npm init -y
 $ npm run dev
 
 
+- O que é Streams em Node.js
 
+O conceito de Stream em Node.js pode ser facilmente associado com os Streams famosos aqui no Brasil, no caso de Streams de Filmes: Netflix, Prime Video, HBO e Disney+ e de Streams de Musica: Spotify, Deezer e Youtube Music. Mas o que esses Streams de conteúdo tem haver com o Stream em Node.js? Basicamente, a forma como esses Strams mostram seus dados são um upload que depende totalmente da qualidade, estabilidade e conexão da sua internet, fazendo um carregamento prévio dos dados para uma melhor experiência do usuário.
+Streaming é um conceito simples, é basicamente um carregamento dos dados antes mesmo o upload ser concluido. Um exemplo bem fácil é o um Upload de um arquivo grade na sua aplicação. Imagine que um usuário faz um upload de um arquivo de 1giga de tamanho. Antes mesmo do upload ser   concluindo, eu vou fazendo a devida operação com os dados desse arquivo, assim ganhando mais performance na aplicação.
+No mundo da programação, o Stream de dados é dividido em: Readable Streams --> São os Streams de Leitura, basicamente quando eu estou lendo os dados e fazendo operações antes mesmo de o upload ter terminado. E Writable Streams --> São os Streams de Escrita, basicamente quando eu estou enviando dados para meu front-end mesmo antes de ter feito totalmente o upload.
+Em Node.js o Streaming de dados é um diferencial, pois ele foi pensado nessa funcionalidade desde o começo de sua criação. Aqui está como fazer um Streaming de dados em Node.js:
 
 
 
